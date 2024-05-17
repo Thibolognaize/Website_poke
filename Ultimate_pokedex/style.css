@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'Pokemon-solid';
+	src: url(font/Pokemon\ Solid.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Pokemon-hollow';
+    src: url(font/Pokemon\ Hollow.ttf);
+}
+@font-face {
+    font-family: 'Jersey25';
+    src: url(font/Jersey25-Regular.ttf);
+}
+body {
+	font-family: 'Roboto', sans-serif;
+    background-image: url(img/grass.jpeg);
+}
+
+h2{
+    font-family: 'Pokemon-solid';
+}
+p{
+    font-family: 'Jersey25';
+}
+.title{
+    font-family: 'Pokemon-hollow';
+    display: flex;
+    justify-content: center;
+    visibility:none;
+    margin : 0 50px;
+    text-align: center;
+    color : #ffc805;
+    background-color: #3c5aa6;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.title::before, .title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/pokeball.png');
+    background-size: cover;
+    top : 20px;
+}
+
+.title::before {
+    left: +10px;
+
+}
+
+.title::after {
+    right: +10px;
+}
+
+
+.description{
+    font-family: 'Jersey25';
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    visibility:none;
+    margin : 0 200px;
+    text-align: center;
+    color : black;
+    background-color: #3c5aa67d;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 30px;
+    border: solid 3px #000000;
+    margin-top: 35px;
+}
+
+
+
+
+.container-img{
+    text-align: center;   
+    background-image: url('./img/bgcard.jpg');
+    background-size: cover;
+    border-top-left-radius : 10px;
+    border-bottom-left-radius: 10px;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+}
+
+.container {
+    margin: 0 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+    text-align: center;
+    width: 24%;
+    border: solid 2px rgb(71, 37, 15);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.info{
+    background-color: rgba(245, 245, 245, 0.473);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3c5aa6cd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+}
